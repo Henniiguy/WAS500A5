@@ -1,0 +1,23 @@
+  #navPane {
+      float: left;
+      background: rgb(255, 255, 255);
+      width: 25%;
+      height: 280px;
+  }
+
+  #mainCont {
+      float: right;
+      background: rgb(255, 255, 255);
+      width: 75%;
+      height: 280px;
+  }
+
+  .button {
+      background-color: #c9671cc8;
+      box-shadow: 0 5px 0 #73ad10;
+      color: white;
+      padding: 1em 1.5em;
+      position: relative;
+      text-decoration: none;
+      display: inline-block;
+  }

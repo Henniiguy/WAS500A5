@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Collection of Books</title>
+</head>
+
+<body>
+  <div id="navPane">
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <a class="button" href="/"> Home Page </a><br><br>
+    <a class="button" href="/booksList"> Books </a><br><br>
+  </div>
+  <div id="mainCont">
+
+    <div style="display: flex; flex-direction:column;">
+      <% books.forEach(function(book) { %>
+        <div style="padding-bottom:10px;">
+          <div style="float: left;">
+            <a href="book/<%= book._id %>">
+              <img src="<%= book.image %>" alt="<%= book.name %>" width="50%" height="70%">
+            </a>
+          </div>
+          <br>
+          <div>
+            <a href="book/<%= book._id %>">
+              <%= book.name %> By <%= book.author %>
+            </a>
+          </div>
+        </div>
+        <% }); %>
+    </div>
+
+  </div>
+</body>
+
+</html>
